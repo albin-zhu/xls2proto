@@ -1,0 +1,16 @@
+timestamp: 1446283149.12
+
+_extend=_buf.extend;_to_str=to_str;_escape=escape; _extend(('''#!/bin/evn python\r
+#coding: UTF-8\r
+from proto_render import ProtoRender\r
+# 请保持一个proto文件内有一个message与文件名相同\r
+# 这样才会导出，如果有其它需求，请更改下面的代码\r
+from protos.''', _escape(_to_str(proto)), '''_pb2 import ''', _escape(_to_str(proto)), ''' as Desc\r
+class ''', _escape(_to_str(proto)), '''Render(ProtoRender):\r
+	def __init__(self):\r
+		ProtoRender.__init__(self)\r
+\r
+	def render(self, data):\r
+		# 如有特殊处理请复写\r
+		ProtoRender.render(self, data)\r
+\r\n''', ));

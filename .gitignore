@@ -1,0 +1,5 @@
+*.pyc
+*.e4p
+*.pyproj
+_ericproject
+_ericproject/

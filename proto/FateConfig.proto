@@ -1,0 +1,26 @@
+syntax ="proto2";
+
+package com.gamehero.sxd2.pro;
+
+message FateCell
+{
+   optional uint32 attack        = 1;
+   optional uint32 def           = 2;
+   optional uint32 att_effect    = 3;
+   optional uint32 dog_effect    = 4;
+   optional uint32 parry_effecta = 5;
+   optional uint32 crit_effect   = 6;
+   optional uint32 arp_effect    = 7;
+   optional string reward_item   = 8;
+}
+
+message FateChapter
+{
+   repeated FateCell celss       = 1;
+   optional uint32 taks_id       = 2;
+}
+
+message FateConfig
+{
+   optional FateChapter chpaters = 1;
+}
