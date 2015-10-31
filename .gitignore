@@ -3,3 +3,7 @@
 *.pyproj
 _ericproject
 _ericproject/
+*.cache
+.vs
+.vs/*
+*.sln
