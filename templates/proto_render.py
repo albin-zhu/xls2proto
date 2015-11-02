@@ -5,6 +5,7 @@
 
 from google.protobuf import message
 from google.protobuf.descriptor import FieldDescriptor
+from exceptions import BaseException
 
 class ProtoRender(object):
     # static type map
@@ -53,7 +54,7 @@ class ProtoRender(object):
 
     def _validate(self, field, value):
         if not isinstance(field, FieldDescriptor):
-            raise ("[Error] logic error in _validate, field must be type FieldDescriptor")
+            raise (BaseException("[Error] logic error in _validate, field must be type FieldDescriptor"))
             return False
         t = ProtoRender.__maps[field.cpp_type]
         if ((isinstance(value, str) and len(value) == 0) or value == None) and field.label == FieldDescriptor.LABEL_OPTIONAL:
@@ -63,7 +64,7 @@ class ProtoRender(object):
                 return t(value)
                 return True
             except:
-                raise (r"[Error] value error, %s need %s but %s" % (field.name, t, type(value)))
+                raise (BaseException(r"[Error] value error, %s need %s but %s" % (field.name, t, type(value))))
                 return False
         else:
             return value

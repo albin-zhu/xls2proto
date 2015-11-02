@@ -3,20 +3,15 @@
 # author: albin(albinyewen@gmail.com)
 
 from xlslib import *
-import os
-import tenjin
-from tenjin.helpers import *
-from ProtoHelper import *
-import json
 from templates import *
-from __builtin__ import type
+from protobuf_to_dict import protobuf_to_dict
+import os
 
 class XLSRender(object):
 	def __init__(self, path):
 		self._path = path
 		self._dataSource = {}
 		self._generate_sources()
-		self._engine = tenjin.Engine()
 
 	def _generate_sources(self):
 		# generate data sources
@@ -51,7 +46,7 @@ def main():
 		Desc = type(proto)
 		t = Desc()
 		t.MergeFromString(rbytes)
-		print t
+		print (protobuf_to_dict(t))
 	raw_input()
 
 if __name__ == '__main__':

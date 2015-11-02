@@ -1,0 +1,130 @@
+{
+  "chpaters": {
+    "taks_id": 1020130,
+    "celss": [
+      {
+        "reward_item": "10010001-500"
+      },
+      {
+        "reward_item": "10010002-5"
+      },
+      {
+        "reward_item": "10010003-1000"
+      },
+      {
+        "reward_item": "10010004-20"
+      },
+      {
+        "reward_item": "10010005-100"
+      },
+      {
+        "attack": 10
+      },
+      {
+        "reward_item": "10010001-500"
+      },
+      {
+        "reward_item": "10010002-5"
+      },
+      {
+        "reward_item": "10010003-1000"
+      },
+      {
+        "reward_item": "10010004-20"
+      },
+      {
+        "reward_item": "10010005-100"
+      },
+      {
+        "def": 10
+      },
+      {
+        "reward_item": "10010001-500"
+      },
+      {
+        "reward_item": "10010002-5"
+      },
+      {
+        "reward_item": "10010003-1000"
+      },
+      {
+        "reward_item": "10010004-20"
+      },
+      {
+        "reward_item": "10010005-100"
+      },
+      {
+        "att_effect": 10
+      },
+      {
+        "reward_item": "10010001-500"
+      },
+      {
+        "reward_item": "10010002-5"
+      },
+      {
+        "reward_item": "10010003-1000"
+      },
+      {
+        "reward_item": "10010004-20"
+      },
+      {
+        "reward_item": "10010005-100"
+      },
+      {
+        "dog_effect": 10
+      },
+      {
+        "reward_item": "10010001-500"
+      },
+      {
+        "reward_item": "10010002-5"
+      },
+      {
+        "reward_item": "10010003-1000"
+      },
+      {
+        "reward_item": "10010004-20"
+      },
+      {
+        "reward_item": "10010005-100"
+      },
+      {
+        "parry_effecta": 10
+      },
+      {
+        "reward_item": "10010001-500"
+      },
+      {
+        "reward_item": "10010002-5"
+      },
+      {
+        "reward_item": "10010003-1000"
+      },
+      {
+        "reward_item": "10010004-20"
+      },
+      {
+        "reward_item": "10010005-100"
+      },
+      {
+        "crit_effect": 10
+      },
+      {
+        "reward_item": "10010001-500"
+      },
+      {
+        "reward_item": "10010002-5"
+      },
+      {
+        "reward_item": "10010003-1000"
+      },
+      {
+        "reward_item": "10010004-20"
+      },
+      {
+        "arp_effect": 10
+      }
+    ]
+  }
+}
